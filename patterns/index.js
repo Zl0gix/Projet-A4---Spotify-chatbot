@@ -26,7 +26,39 @@ const patternArr = [
 	{
 		pattern:"Give me some recommendations?",
 		intent: "Recommendations"
-	}
+	},
+	{
+		pattern: "Artists?",
+		intent: "Artists Recommendations"
+	},
+	{
+		pattern: "Tracks?",
+		intent: "Tracks Recommendations"
+	},
+	{
+		pattern: "Genres?",
+		intent: "Genres Recommendations"
+	},
+	{
+		pattern: "Artists? and tracks?",
+		intent: "Artists and Tracks Recommendations"
+	},
+	{
+		pattern: "Artists? and Genres?",
+		intent: "Artists and Genres Recommendations"
+	},
+	{
+		pattern: "Tracks? and Genres?",
+		intent: "Tracks and Genres Recommendations"
+	},
+	{
+		pattern: "Artists? and tracks? and genres?",
+		intent: "All Recommendations"
+	},
+	{
+		pattern: "None",
+		intent: "No Recommendations"
+	},
 ];
 
 module.exports = patternArr;
