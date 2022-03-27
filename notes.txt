@@ -44,12 +44,12 @@ What's the most listened|popular album of <Artist> ?
 GET https://api.spotify.com/v1/artists/{id}/top-tracks
 What(?:'s|\sis|\sare)\sthe\smost\s(?:listened|popular)\salbums?\sof\s(?<Track>.+)\s\?$
 Test strings :
-What's the most listened album of <Album> ?
-What is the most listened album of <Album> ?
-What's the most popular album of <Album> ?
-What is the most popular album of <Album> ?
-What are the most listened album of <Album> ?
-What are the most listened albums of <Album> ?
+
+What is the most listened album of <Artist> ?
+What's the most popular album of <Artist> ?
+What is the most popular album of <Artist> ?
+What are the most listened album of <Artist> ?
+What are the most listened albums of <Artist> ?
 
 
 Is <Artist> more popular than <Artist> ?

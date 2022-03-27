@@ -22,6 +22,10 @@ const patternArr = [
 	{
 		pattern:"Is\\s(?<Track1>.+)\\smore\\slistened\\sthan\\s(?<Track2>.+)\\s\\?$",
 		intent: "Tracks popularity"
+	},
+	{
+		pattern:"Give me some recommendations?",
+		intent: "Recommendations"
 	}
 ];
 
