@@ -13,7 +13,7 @@ What are the music style(s)|genre(s) of <Artist> ?
 What(?:'s|\sis|\sare)\sthe\smusic\s(?:styles?|genres?)\sof\s(?<Artist>.+)\s\?$
 GET https://api.spotify.com/v1/search
 Test strings :
-hat is the music style of <Artist> ?
+What is the music style of <Artist> ?
 What is the music genre of <Artist> ?
 What's the music genre of <Artist> ?
 What are the music styles of <Artist> ?
@@ -40,16 +40,16 @@ What is the album of <Track with spaces> ?
 What is the album of <Track with spaces> ?
 
 
-What's the most listened|popular album of <Artist> ?
+What's the most listened|popular track(s) of <Artist> ?
 GET https://api.spotify.com/v1/artists/{id}/top-tracks
-What(?:'s|\sis|\sare)\sthe\smost\s(?:listened|popular)\salbums?\sof\s(?<Track>.+)\s\?$
+What(?:'s|\sis|\sare)\sthe\smost\s(?:listened|popular)\stracks?\sof\s(?<Artist>.+)\s\?$
 Test strings :
 
-What is the most listened album of <Artist> ?
-What's the most popular album of <Artist> ?
-What is the most popular album of <Artist> ?
-What are the most listened album of <Artist> ?
-What are the most listened albums of <Artist> ?
+What is the most listened track of <Artist> ?
+What's the most popular track of <Artist> ?
+What is the most popular track of <Artist> ?
+What are the most listened track of <Artist> ?
+What are the most listened tracks of <Artist> ?
 
 
 Is <Artist> more popular than <Artist> ?
@@ -60,7 +60,7 @@ Is <Artist 1> more popular than <Artist 2> ?
 
 
 Is <Track 1> more listened than <Track 2> ?
-GET
+GET 
 Is\s(?<Track1>.+)\smore\slistened\sthan\s(?<Track2>.+)\s\?$
 Test strings :
 Is <Track 1> more listened than <Track 2> ?
@@ -78,3 +78,16 @@ Do you want to discover new artists new albums or new tracks ?
  - tracks :
  - albums :
  - artists :
+
+https://open.spotify.com/track/2ewjMyCbNv2X1dB2qIDCwD?si=5bf25d6c1f2f4a78
+
+
+Give me some recommendations
+Artists
+Yes
+Damso
+No
+Yes
+Roadgame
+No
+No
