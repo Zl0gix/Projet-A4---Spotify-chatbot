@@ -1,0 +1,80 @@
+=== Spotify :
+
+reco :
+artistes ou chansons en fonction d'autres
+
+
+permission : 139656984640
+chatbot :
+année de sortie, trucs les plus écoutés, artiste qui a fait telle chanson, recommandations simples ou croisées avec un autre user
+
+
+What are the music style(s)|genre(s) of <Artist> ?
+What(?:'s|\sis|\sare)\sthe\smusic\s(?:styles?|genres?)\sof\s(?<Artist>.+)\s\?$
+GET https://api.spotify.com/v1/search
+Test strings :
+hat is the music style of <Artist> ?
+What is the music genre of <Artist> ?
+What's the music genre of <Artist> ?
+What are the music styles of <Artist> ?
+What are the music genres of <Artist> ?
+What are the music genres of <Artist blabla> ?
+What are the music genres of <Artist bla bla ?> ?
+
+
+Who did <Track> ?
+Who\sdid\s(?<Track>.+)\s\?$
+GET https://api.spotify.com/v1/search
+Test strings :
+Who did <Track> ?
+Who did <Track with spaces> ?
+
+
+What's the album of <Track> ?
+What(?:'s| is)\sthe\salbum\sof\s(?<Track>.+)\s\?$
+GET https://api.spotify.com/v1/search
+Test strings : 
+What's the album of <Track> ?
+What's the album of <Track> ?
+What is the album of <Track with spaces> ?
+What is the album of <Track with spaces> ?
+
+
+What's the most listened|popular album of <Artist> ?
+GET https://api.spotify.com/v1/artists/{id}/top-tracks
+What(?:'s|\sis|\sare)\sthe\smost\s(?:listened|popular)\salbums?\sof\s(?<Track>.+)\s\?$
+Test strings :
+What's the most listened album of <Album> ?
+What is the most listened album of <Album> ?
+What's the most popular album of <Album> ?
+What is the most popular album of <Album> ?
+What are the most listened album of <Album> ?
+What are the most listened albums of <Album> ?
+
+
+Is <Artist> more popular than <Artist> ?
+GET 
+Is\s(?<Artist1>.+)\smore\spopular\sthan\s(?<Artist2>.+)\s\?$
+Test strings :
+Is <Artist 1> more popular than <Artist 2> ?
+
+
+Is <Track 1> more listened than <Track 2> ?
+GET
+Is\s(?<Track1>.+)\smore\slistened\sthan\s(?<Track2>.+)\s\?$
+Test strings :
+Is <Track 1> more listened than <Track 2> ?
+
+
+- Give me some recommandations -
+
+Choice : [Artist, genre, track] >= 1
+
+what kind of genre would you want to discover ?
+
+
+Do you want to discover new artists new albums or new tracks ?
+
+ - tracks :
+ - albums :
+ - artists :
